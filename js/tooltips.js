@@ -1,14 +1,4 @@
-// // // // // // // // // // // // // // // 
-
 let newWidth;
-
-// const windowWidth = window.innerWidth;
-
-// const page = document.querySelector('.main');
-// const pageWidth = page.getBoundingClientRect().width;
-
-// const promoTooltip = document.querySelector('#promo-tooltip');
-// const promoTooltipContent = document.querySelector('.promo-tooltip-content');
 
 const painTooltip = document.querySelector('#pain-tooltip');
 const painTooltipContent = document.querySelector('.pain-tooltip-content');
@@ -57,44 +47,6 @@ const researchTooltipMob04Content = document.querySelector('.research-mob__toolt
 
 const teraUltraTooltipMob = document.querySelector('#tera-ultra-tooltip');
 const teraUltraTooltipMobContent = document.querySelector('.tera-ultra__tooltip-content');
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const promoTooltip = document.querySelector('#promo-tooltip');
-//   const promoTooltipContent = document.querySelector('.promo-tooltip-content');
-
-//   if (!promoTooltip) {
-//     console.error('Элемент promoTooltip не найден!');
-//     return;
-//   }
-
-//   tippy(promoTooltip, {
-//     content: promoTooltipContent,
-//     arrow: false,
-//     trigger: 'click',
-//     offset: [0, -20],
-//     maxWidth: 920,
-//     boundary: 'viewport',
-//     flipOnUpdate: true,
-//     zIndex: 9,
-//     theme: 'custom',
-//     maxWidth: window.innerWidth <= 768 ? '48vw' : 300, 
-//     // placement: 'right-end',
-//     onMount(instance) {
-//       console.log('Тултип показан:', instance);
-//     },
-//     onHide(instance) {
-//       console.log('Тултип скрыт:', instance);
-//     },
-//     // onCreate(instance) {
-//     //   // Проверяем ширину экрана
-//     //   if (window.innerWidth <= 1920) {
-//     //     instance.popper.style.maxWidth = '48vw'; // 90% ширины экрана
-//     //     instance.popper.style.width = '100%'; // Растягиваем на всю ширину
-//     //   }
-//     // },
-//   });
-// });
-
 
 promoTooltip.addEventListener('click', () => {
   promoTooltipContent.classList.toggle('active')
@@ -207,11 +159,11 @@ function updateTooltipWidth() {
     promoTooltipContent.style.width = `${newWidth}px`;
         painTooltipContent.style.width = `${newWidth}px`;
             risksTooltipContent.style.width = `${newWidth}px`;
-                chronicTooltipContent.style.width = `${newWidth}px`;
+                chronicTooltipContent.style.width = `${windowWidth * 0.63}px`;
                     factorsTooltipContent.style.width = `${windowWidth * 0.63}px`;
                         // rowBlockTooltipContent.style.width = `${(windowWidth * 0.04)}px`;
                           teraflexTooltipContent.style.width = `${(newWidth)}px`;
-                          teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.5)}px`;
+                          teraUltraTooltipMobContent.style.width = `${(newWidth)}px`;
   }
 }
 
