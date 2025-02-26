@@ -211,9 +211,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  .risks__block {
-    min-height: 130px;
+  .risks__wrapper {
+    grid-template-rows: repeat(2, minmax(130px, 1fr));
   }
+  .risks__block {
+    min-height: 0;
+    min-width: 0;
+  }
+  
   .risks__img {
     width: 80px;
     height: 80px;

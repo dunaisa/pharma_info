@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 90%;
   margin: 40px 0;
+  height: 55vh;
 }
 
 .algorithm-mob__top-container {
@@ -12,6 +13,7 @@
 
 .algorithm-mob__sliders-wrapper {
   width: 100%;
+  height: 100%;
 }
 
 .algorithm-mob__top-container {
@@ -105,7 +107,7 @@
 }
 
 .algorithm-mob__start-slider {
-  height: 40vh;
+  height: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -168,6 +170,7 @@
   align-items: flex-start;
   /* gap: 5px; */
   display: none;
+  height: 100%;
 }
 
 .slide.active {
