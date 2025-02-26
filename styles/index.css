@@ -1,0 +1,26 @@
+@import url(../styles/normalize.css);
+
+@import url(../styles/blocks/page.css);
+@import url(../styles/blocks/header.css);
+@import url(../styles/blocks/main.css);
+@import url(../styles/blocks/promo.css);
+@import url(../styles/blocks/tooltip.css);
+@import url(../styles/blocks/pain.css);
+@import url(../styles/blocks/risks.css);
+@import url(../styles/blocks/chronic.css);
+@import url(../styles/blocks/tera-comlex.css);
+@import url(../styles/blocks/factors.css);
+@import url(../styles/blocks/changes-scheme.css);
+@import url(../styles/blocks/page-remark.css);
+@import url(../styles/blocks/algorithm.css);
+
+@import url(../styles/blocks/teraflex.css);
+@import url(../styles/blocks/research.css);
+@import url(../styles/blocks/persent.css);
+@import url(../styles/blocks/tera-ultra.css);
+
+@import url(../styles/blocks/footer.css);
+@import url(../styles/blocks/algorithm-mob.css);
+@import url(../styles/blocks/summ.css);
+@import url(../styles/blocks/adaptive.css);
+

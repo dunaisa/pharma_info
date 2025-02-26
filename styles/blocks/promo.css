@@ -1,0 +1,389 @@
+.promo {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 0 0 0 82px;
+  background-image: url(../../images/background_img_promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  position: relative;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  background-image: linear-gradient(1deg, rgba(5, 24, 106, 1) 4%, rgba(5, 24, 106, 0) 30%);
+  background-size: 100% 100%;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+}
+
+.tera__logo-wrapper {
+  width: 156px;
+  height: 156px;
+  margin-top: 60px;
+  margin-bottom: 34px;
+  grid-column: 1;
+  position: relative;
+}
+
+.tera__logo-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translate(0, -25%);
+  border-radius: 50%;
+  display: block;
+  background: rgba(0, 102, 182, 1);
+  box-shadow: 0px 0px 16px 9px rgba(5, 24, 106, 1) inset;
+  box-shadow: 0px 0px 70px 10px rgba(5, 24, 106, 1) inset;  
+  box-shadow: 0px 0px 70px 10px rgba(5, 24, 106, 1) inset;  
+  box-shadow: 0px 0px 70px 10px rgba(5, 24, 106, 0.5) inset;  
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.tera__logo-icon {
+  width: 100%;
+  object-fit: cover;
+}
+
+.promo-text-content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  /* background: transparent; */
+  z-index: 2;
+}
+
+.promo-text {
+  padding: 0;
+  margin: 0 0 72px;
+  font-family: "Roboto", Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 130%;
+}
+
+.promo-text span {
+  font-weight: 700;
+  background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.promo-text-content .promo-text:nth-child(2) {
+  font-weight: 700;
+  margin: 0 0 53px;
+  background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: block;
+  width: 90%;
+}
+
+.promo-text-content .promo-text:nth-child(2) sup {
+  background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.promo__list-wrapper {
+  grid-column: 1;
+  z-index: 2;
+  max-width: 957px;
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 8% 13% 79%;
+  align-items: center;
+  gap: 13px;
+}
+
+.item__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 64px;
+  grid-column: 1;
+}
+
+.item__image-wrapper::before {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 50%;
+    display: block;
+    background: rgba(1, 153, 228, 1);
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+.item__image {
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1;
+  justify-self: end;
+}
+
+.item-text,
+.item-number {
+  font-family: "Roboto", Arial, sans-serif;  
+  padding: 0;
+  margin: 0;
+  
+}
+
+.item-number {
+  grid-column: 2;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  grid-column: 2 / 3;
+  
+}
+
+.item-text {
+  grid-column: 3 / 4;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: left;  
+}
+
+.promo-text-nb {
+  grid-column: 1;
+  z-index: 2;
+}
+
+.promo-text-nb {
+  margin: 44px 0 0;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.promo__img--mob {
+  display: none;
+}
+
+@media screen and (max-width: 1919px) {
+  .promo {
+    overflow: hidden;
+  }
+
+  .promo-text {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .item-number {
+    font-size: 32px;
+  }
+
+  .item-text {
+    font-size: 28px;
+  }
+
+  .promo__img {
+    display: none;
+  }
+
+  .item-number {
+    font-size: 32px;
+  }
+
+  .promo__list-wrapper {
+    max-width: 850px;
+  }
+
+  .promo__list {
+    gap: 25px;
+  }
+
+  .promo-text-nb {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .promo {
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .promo-text {
+    font-size: 28px;
+  }
+
+  .item-number {
+    font-size: 26px;
+  }
+
+  .item-text {
+    font-size: 16px;
+  }
+
+.item-text {
+    font-size: 24px;
+  }
+
+.item-number {
+    font-size: 28px;
+  }
+
+  .promo__list {
+    gap: 25px;
+  }
+
+  .item__image-wrapper {
+    width: 50px;
+  }
+  .promo__list-wrapper {
+    max-width: 700px;
+  }
+
+  .tera__logo-wrapper {
+    margin-top: 40px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+
+  .tera__logo-wrapper {
+    width: 120px;
+    height: 120px;
+  }  
+}
+
+@media screen and (max-width: 1024px) {
+  .promo {
+    grid-template-columns: 72% 28%;
+  }
+
+  .promo::before {
+    background-image: linear-gradient(1deg, rgba(5, 24, 106, 1) 4%,  rgba(5, 24, 106, 0.5) 30%);
+  }
+
+  .promo__list {
+    gap: 15px;
+  }
+
+  .promo-text-nb {
+    margin-top: 20px;
+  }
+  
+  .promo-text-content .promo-text:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .tera__logo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 790px)  {
+  .promo {
+    padding-right: 30px;
+    grid-template-columns: 100%;
+    background: none;
+  }
+  .promo::before {
+    background: none;
+  }
+
+  .item {
+    gap: 10px;
+    grid-template-columns: 40px 1fr 5fr;
+  }
+
+  .item__image-wrapper {
+    width: 40px;
+  }
+  .promo__img--mob {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+
+  .promo-text-nb {
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .promo {
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+
+ .item__image-wrapper {
+  width: 30px;
+  }
+
+  .item {
+    gap: 10px;
+    grid-template-columns: 30px 1fr 5fr;
+  }
+
+  .tera__logo-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .item {
+    gap: 10px;
+    grid-template-columns: 30px 1.5fr 4.5fr;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .promo {
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+ }
+

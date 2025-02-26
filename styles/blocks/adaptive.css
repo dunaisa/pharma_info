@@ -1,0 +1,182 @@
+@media screen and (max-width: 1024px) {
+
+   /* true */
+
+  .heading-fs {
+    font-size: 48px;
+    line-height: 115%;
+  }
+
+  .tera-fs {
+    font-size: 48px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .subheading-fs {
+    font-size: 26px;
+    line-height: 115%;
+  }
+
+    /* true */
+
+  .main-fs {
+    font-size: 22px;
+    line-height: 115%;
+  }
+
+  .small-fs {
+    font-size: 20px;
+    line-height: 115%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  /* true */
+
+  .heading-fs {
+    font-size: 42px;
+    line-height: 115%;
+  }
+
+  .scheme-text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   /* true */
+
+  .heading-fs {
+    font-size: 38px;
+    line-height: 115%;
+  }
+
+  .tera-fs {
+    font-size: 48px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .subheading-fs {
+    font-size: 24px;
+    line-height: 115%;
+  }
+
+    /* true */
+
+  .main-fs {
+    font-size: 20px;
+    line-height: 115%;
+  }
+
+  .small-fs {
+    font-size: 18px;
+    line-height: 115%;
+  }
+
+  .scheme-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .xs-fs {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+   /* true */
+
+  .heading-fs {
+    font-size: 34px;
+    line-height: 115%;
+  }
+
+  .tera-fs {
+    font-size: 48px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .subheading-fs {
+    font-size: 22px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .main-fs {
+    font-size: 18px;
+    line-height: 115%;
+  }
+
+  .small-fs {
+    font-size: 16px;
+    line-height: 115%;
+  }
+
+  .scheme-text {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  /* true */
+
+ .heading-fs {
+   font-size: 30px;
+   line-height: 115%;
+ }
+ .scheme-text {
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 425px) {
+
+   /* true */
+
+  .heading-fs {
+    font-size: 28px;
+    line-height: 115%;
+  }
+
+  .tera-fs {
+    font-size: 48px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .subheading-fs {
+    font-size: 20px;
+    line-height: 115%;
+  }
+
+  /* true */
+
+  .main-fs {
+    font-size: 16px;
+    line-height: 115%;
+  }
+
+  .small-fs {
+    font-size: 14px;
+    line-height: 115%;
+  }
+  .scheme-text {
+    font-size: 10px;
+  }
+
+  .xs-fs {
+    font-size: 12px;
+  }
+}

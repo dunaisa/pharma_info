@@ -1,0 +1,251 @@
+.risks {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  flex-direction: column;
+  padding: 82px 30px 93px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.risks::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: radial-gradient(47.26% 45.57% at 52.74% 54.49%, #0199E4 0%, #05186A 100%);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: -2;
+}
+
+.risks__top-wrapper {
+  max-width: max-content;
+  position: relative;
+}
+
+.risks__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 43px;
+}
+
+
+.risks-title {
+  text-transform: uppercase;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  margin: 0 0 120px;
+  padding: 0 10px 0 0;
+  background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.risks__block {
+  border-radius: 12px;
+  border: 2px solid;
+  background: radial-gradient(47.26% 45.57% at 52.74% 54.49%, rgba(1, 153, 228, 0.7) 0%, rgba(5, 24, 106, 0.7) 100%);
+  border-color: linear-gradient(90deg, #F6E4CA 5.49%, #BD9268 100%);
+  box-shadow: 0px 0px 26px 0px rgba(255, 255, 255, 0.7) inset;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 417px;
+  min-height: 336px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.risks__block:nth-child(3)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 112px;
+  height: 112px;
+  background-image: url(../../images/risks_light.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate(50%, 50%);
+}
+
+.risks-description {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 130%;
+  margin: 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.risks__img {
+  width: 122px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+
+@media screen and (max-width: 1919px) {
+  .risks-title {
+    font-size: 56px;
+  }
+  
+
+  .risks-description {
+    font-size: 34px;
+  }
+
+}
+
+@media screen and (max-width: 1650px) {
+  .risks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .risks-title {
+    font-size: 50px;
+    margin-bottom: 80px;
+  }
+  .risks-description {
+    font-size: 28px;
+  }
+  .risks__block {
+    max-width: 380px;
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .risks__block {
+    max-width: 290px;
+    min-height: 230px;
+    height: 100%;
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .risks__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 60px;
+
+  }
+
+  .risks__block:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .risks__block:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .risks__block:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .risks__block:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .risks__block {
+    max-width: 100%;
+    min-height: 200px;
+  }
+
+  .risks {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .risks__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .risks-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .risks__block {
+    min-height: 130px;
+  }
+  .risks__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .risks {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .risks__img {
+    width: 60px;
+    height: 60px;
+  }
+  .risks__wrapper {
+    column-gap: 10px;
+    row-gap: 25px;
+  }
+
+  .risks__block:nth-child(3)::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .risks__img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
