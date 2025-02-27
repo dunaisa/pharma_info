@@ -304,8 +304,6 @@ function updateTooltipWidth() {
                 chronicTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                     factorsTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                     rowBlockTooltipContent.style.width = `auto`;
-                        // rowBlockTooltipContent.style.width = `${(newWidth)}px`;
-                          // teraflexTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                         teraUltraTooltipMobContent.style.width = `${(newWidth - 0.06)}px`;
   }
 
@@ -317,9 +315,8 @@ function updateTooltipWidth() {
                 chronicTooltipContent.style.width = `${newWidth}px`;
                     factorsTooltipContent.style.width = `${windowWidth * 0.63}px`;
                     rowBlockTooltipContent.style.width = `auto`;
-                        // rowBlockTooltipContent.style.width = `${(windowWidth * 0.04)}px`;
                           teraflexTooltipContent.style.width = `${(newWidth)}px`;
-                          teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.5)}px`;
+                          teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.85)}px`;
   }
 }
 
@@ -356,16 +353,6 @@ function updateTooltipPosition() {
       const overflowOffsetChronic = pathTooltipChronic - chronicTooltip.width;
       chronicTooltipContent.style.left = `${overflowOffsetChronic}px`;
     }
-
-    // if (windowWidth < 550) {
-
-    //   const rowBlockTooltip = chronicTooltipContent.getBoundingClientRect();
-    
-    //     const distanceToLeftChronic = rowBlockTooltip.left;
-    //     const pathTooltipBlock= windowWidth - distanceToLeftChronic;
-    //     const overflowOffsetBlock = pathTooltipBlock - rowBlockTooltip.width;
-    //     rowBlockTooltipContent.style.left = `${overflowOffsetBlock}px`;
-    //   }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
