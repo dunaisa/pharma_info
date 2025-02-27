@@ -158,6 +158,8 @@ const risksTooltipContent = document.querySelector('.risks-tooltip-content');
 
 const chronicTooltip = document.querySelector('#chronic-tooltip');
 const chronicTooltipContent = document.querySelector('.chronic-tooltip-content');
+const chronicTooltipMob = document.querySelector('#chronic-tooltip-mob');
+const chronicTooltipContentMob = document.querySelector('.chronic-tooltip-content-mob');
 
 const factorsTooltip = document.querySelector('#factors-tooltip');
 const factorsTooltipContent = document.querySelector('.factors-tooltip-content');
@@ -213,6 +215,10 @@ risksTooltip.addEventListener('click', () => {
 
 chronicTooltip.addEventListener('click', () => {
   chronicTooltipContent.classList.toggle('active')
+});
+
+chronicTooltipMob.addEventListener('click', () => {
+  chronicTooltipContentMob.classList.toggle('active')
 });
 
 factorsTooltip.addEventListener('click', () => {
@@ -301,7 +307,7 @@ function updateTooltipWidth() {
     promoTooltipContent.style.width = `${newWidth}px`;
         painTooltipContent.style.width = `${newWidth - 0.06}px`;
             risksTooltipContent.style.width = `${(newWidth - 0.06)}px`;
-                chronicTooltipContent.style.width = `${(newWidth - 0.06)}px`;
+                chronicTooltipContent.style.width = `${(windowWidth * 0.4)}px`;
                     factorsTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                     rowBlockTooltipContent.style.width = `auto`;
                         teraUltraTooltipMobContent.style.width = `${(newWidth - 0.06)}px`;
@@ -312,7 +318,8 @@ function updateTooltipWidth() {
     promoTooltipContent.style.width = `${newWidth}px`;
         painTooltipContent.style.width = `${newWidth}px`;
             risksTooltipContent.style.width = `${newWidth}px`;
-                chronicTooltipContent.style.width = `${newWidth}px`;
+            chronicTooltipContent.style.width = `${(windowWidth * 0.4)}px`;
+            chronicTooltipContentMob.style.width = `${(windowWidth * 0.8)}px`;
                     factorsTooltipContent.style.width = `${windowWidth * 0.63}px`;
                     rowBlockTooltipContent.style.width = `auto`;
                           teraflexTooltipContent.style.width = `${(newWidth)}px`;
@@ -343,16 +350,6 @@ function updateTooltipPosition() {
     const overflowOffsetRisks = pathTooltipRisks - risksTooltipRect.width;
     risksTooltipContent.style.left = `${overflowOffsetRisks}px`;
   }
-
-    if (windowWidth < 1097) {
-
-    const chronicTooltip = chronicTooltipContent.getBoundingClientRect();
-  
-      const distanceToLeftChronic = chronicTooltip.left;
-      const pathTooltipChronic = windowWidth - distanceToLeftChronic;
-      const overflowOffsetChronic = pathTooltipChronic - chronicTooltip.width;
-      chronicTooltipContent.style.left = `${overflowOffsetChronic}px`;
-    }
 }
 
 window.addEventListener('DOMContentLoaded', () => {

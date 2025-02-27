@@ -231,6 +231,10 @@
   padding-top: 0;
 }
 
+.chronic-tooltip_mob {
+  display: none;
+}
+
 
 @media screen and (max-width: 1919px) {
   .promo-tooltip {
@@ -347,8 +351,22 @@
     width: 30px;
     height: 30px;
   }
+
+  .chronic-tooltip_desk {
+    display: none;
+  }
+
+  .chronic-tooltip_mob {
+    display: block;
+  }
+
   .chronic-tooltip {
     top: 5%;
+    right: 5%;
+  }
+
+  .chronic-tooltip-content-mob {
+    transform: translateX(-100%);
   }
 }
 
