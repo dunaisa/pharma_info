@@ -8,6 +8,7 @@
   padding: 112px 82px 86px;
   box-sizing: border-box;
   position: relative;
+  overflow-x: hidden;
 }
 
 .changes-scheme::before {
@@ -151,6 +152,7 @@
 
 .row_type_three {
   grid-row: 3;
+  position: relative;
 }
 
 .row__block-arrow {

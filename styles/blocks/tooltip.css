@@ -153,7 +153,7 @@
 
 .row__block-tooltip {
   top: 0;
-  right: 0;
+  right: 38%;
   transform: translate(50%, -50%);
 }
 
@@ -350,6 +350,15 @@
   .chronic-tooltip {
     top: 5%;
   }
+}
+
+@media screen and (max-width: 550px) {
+  .row__block-tooltip {
+    top: 0;
+    right: 62%;
+    transform: translate(50%, -50%);
+  }
+
 }
 
 @media screen and (max-width: 500px) {

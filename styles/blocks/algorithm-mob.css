@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 90%;
   margin: 40px 0;
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .algorithm-mob__top-container {
