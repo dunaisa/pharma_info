@@ -293,7 +293,6 @@ function updateTooltipWidth() {
             risksTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                 chronicTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                     factorsTooltipContent.style.width = `${(newWidth - 0.06)}px`;
-                    // rowBlockTooltipContent.style.width = 447 + 'px';
                         rowBlockTooltipContent.style.width = `auto`;
                           teraflexTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                         researchTooltip03Content.style.width = `${(windowWidth * 0.3)}px`;
@@ -310,6 +309,7 @@ function updateTooltipWidth() {
                 chronicTooltipContent.style.width = `${(windowWidth * 0.4)}px`;
                     factorsTooltipContent.style.width = `${(newWidth - 0.06)}px`;
                     rowBlockTooltipContent.style.width = `auto`;
+                    teraflexTooltipContent.style.width = `${(windowWidth * 0.45)}px`;
                         teraUltraTooltipMobContent.style.width = `${(newWidth - 0.06)}px`;
   }
 
@@ -323,7 +323,12 @@ function updateTooltipWidth() {
                     factorsTooltipContent.style.width = `${windowWidth * 0.63}px`;
                     rowBlockTooltipContent.style.width = `auto`;
                           teraflexTooltipContent.style.width = `${(newWidth)}px`;
-                          teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.85)}px`;
+                          teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.6)}px`;
+  }
+
+  if (windowWidth <= 600) {
+    teraUltraTooltipMobContent.style.width = `${(windowWidth * 0.85)}px`;
+
   }
 }
 
