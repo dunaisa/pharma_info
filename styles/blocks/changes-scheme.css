@@ -203,10 +203,16 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .changes-scheme {
+    padding-left: 30px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
 
-  .changes-scheme  {
-    padding-left: 30px;
+  .changes-scheme {
+    /* padding-left: 30px; */
     padding-right: 30px;
   }
 

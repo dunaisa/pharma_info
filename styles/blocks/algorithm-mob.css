@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
+  padding-left: 82px;
+  padding-right: 30px;
   margin: 40px 0;
   min-height: 55vh;
+  box-sizing: border-box;
 }
 
 .algorithm-mob__top-container {
@@ -425,6 +428,14 @@
 @media screen and (min-width: 900px) {
   .algorithm-mob {
     display: none;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .algorithm-mob {
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
   }
 
 }

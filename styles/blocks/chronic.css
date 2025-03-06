@@ -81,7 +81,6 @@
 @media screen and (max-width: 1600px) {
 
   .chronic {
-    padding-left: 30px;
     padding-right: 30px;
   }
   .chronic-title {
@@ -89,6 +88,12 @@
   }
   .chronic-subtitle {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chronic {
+    padding-left: 30px;
   }
 }
 

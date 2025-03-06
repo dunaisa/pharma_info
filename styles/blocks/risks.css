@@ -3,7 +3,7 @@
   max-width: 1920px;
   width: 100%;
   flex-direction: column;
-  padding: 82px 30px 93px;
+  padding: 82px 30px 93px 82px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -208,6 +208,14 @@
   .risks-title {
     margin-bottom: 50px;
   }
+}
+
+@media screen and (max-width: 767px) {
+
+  .risks {
+    padding-left: 30px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {

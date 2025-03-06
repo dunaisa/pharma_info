@@ -138,7 +138,7 @@
 }
 
 .chronic-tooltip {
-  top: 0%;
+  top: 4%;
   right: -50px;
 }
 
@@ -312,7 +312,7 @@
 @media screen and (max-width: 790px) {
   .promo-tooltip {
     top: 38%;
-    left: 5%;
+    left: 10%;
   }
 
   .risks-tooltip {
@@ -324,6 +324,12 @@
     transform: translate(-100%, -100%);
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .promo-tooltip {
+    left: 5%;
+  }
 }
 
 @media screen and (max-width: 708px) {

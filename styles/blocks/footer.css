@@ -30,7 +30,7 @@
 
 .footer__list {
   margin: 0;
-  padding: 0 0 0 82px;
+  padding: 0 0 0 40px;
 }
 
 .footer__list-item {
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 1600px) {
   .footer {
-    padding: 52px 30px 50px;
+    padding: 52px 30px 50px 82px;
   }
 
   .footer__list {
@@ -54,6 +54,12 @@
 
   .footer__list-item {
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-left: 30px;
   }
 }
 
