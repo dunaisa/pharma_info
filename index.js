@@ -17,14 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  const totalScrollDistance = animateItems.length * 8;
-
   gsap.to(block, {
     scrollTrigger: {
       trigger: block,
       start: "center center",
-      end: `+=${totalScrollDistance}%`,
-      pin: true,
       scrub: true,
       onEnter: () => {
         animateItems.forEach(item => {
@@ -85,8 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       scrollTrigger: {
         trigger: '.tera-complex__wrapper',
-        start: `center+=${index * 8}% center`,
-        end: `center+=${(index + 1) * 8}% center`,
+        start: `center center`,
         toggleActions: "play none none none",
       },
     });
@@ -96,8 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: mobBlock,
       start: "center center",
-      end: `+=${totalScrollDistance}%`,
-      pin: true,
       scrub: true,
       onEnter: () => {
         mobAnimateItems.forEach(item => {
@@ -135,9 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
       duration: 2.5,
       ease: "power2.out",
       scrollTrigger: {
-        trigger: '.product-mob__elements-wrapper',
-        start: `center+=${index * 8}% center`,
-        end: `center+=${(index + 1) * 8}% center`,
+        trigger: mobBlock,
+        start: `center+=${index * 2}% center`,
         toggleActions: "play none none none",
       },
     });

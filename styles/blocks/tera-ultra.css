@@ -46,6 +46,13 @@
   text-align: left;
 }
 
+.tera-ultra-title sup {
+  font-size: 60%;
+    background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .tera-ultra__blocks-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

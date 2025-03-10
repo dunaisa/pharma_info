@@ -241,6 +241,14 @@
     right: 44%;
     bottom: 48%;
   }
+  
+  /* .research__tooltip_02 {
+    transform: ;
+  }
+
+  .research__tooltip-content_02 {
+    transform: translate(-100%, -100%);
+  } */
 }
 
 @media screen and (max-width: 1440px) {
