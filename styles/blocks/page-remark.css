@@ -68,7 +68,6 @@
 
 @media screen and (max-width: 1600px) {
   .page-remark {
-    padding-left: 30px;
     padding-right: 30px;
   }
 
@@ -84,7 +83,7 @@
 
 @media screen and (max-width: 1440px) {
   .page-remark {
-    padding: 20px 30px;
+    padding: 20px 30px 20px 82px;
     gap: 20px;
   }
 
@@ -103,18 +102,21 @@
 
 }
 
-@media screen and (max-width: 768px) {
-  .page-remark {
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 10px;
-  }
+@media screen and (max-width: 768px) {  
 
   .page-remark__img-wrapper {
     align-self: flex-start;
     max-width: 50px;
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .page-remark {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {

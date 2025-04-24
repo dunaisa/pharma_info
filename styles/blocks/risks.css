@@ -3,7 +3,7 @@
   max-width: 1920px;
   width: 100%;
   flex-direction: column;
-  padding: 82px 30px 93px;
+  padding: 82px 30px 93px 82px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -210,10 +210,23 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .risks__block {
-    min-height: 130px;
+@media screen and (max-width: 767px) {
+
+  .risks {
+    padding-left: 30px;
   }
+
+}
+
+@media screen and (max-width: 600px) {
+  .risks__wrapper {
+    grid-template-rows: repeat(2, minmax(130px, 1fr));
+  }
+  .risks__block {
+    min-height: 0;
+    min-width: 0;
+  }
+  
   .risks__img {
     width: 80px;
     height: 80px;

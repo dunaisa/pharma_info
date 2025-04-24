@@ -242,9 +242,14 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 767px) {
   .promo {
     padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .promo {
     position: relative;
   }
 

@@ -46,6 +46,13 @@
   text-align: left;
 }
 
+.tera-ultra-title sup {
+  font-size: 60%;
+    background: linear-gradient(90.28deg, #B7936E -14.36%, #FBF0D7 47.34%, #B7936E 106.62%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .tera-ultra__blocks-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -136,7 +143,6 @@
 
   .tera-ultra {
     padding-right: 30px;
-    padding-left: 30px;
   }
 
   .tera-ultra__subheading {
@@ -210,12 +216,21 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .tera-ultra {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+
+
+/* @media screen and (max-width: 767px) {
+
+  .tera-ultra {
+    padding-left: 30px;
+  }
+
+} */
 
 
 @media screen and (max-width: 670px) {

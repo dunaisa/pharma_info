@@ -1,5 +1,5 @@
 .pain {
-  padding: 111px 20px 84px;
+  padding: 111px 20px 84px 82px;
   box-sizing: border-box;
   display: flex;
   position: relative;
@@ -207,8 +207,8 @@
   }
 
   .pain-item-content {
-    width: 406px;
-    height: 406px;
+    width: 380px;
+    height: 380px;
   }
 
   .pain-item-heading {
@@ -221,8 +221,8 @@
     gap: 90px;
   }
   .pain-item-content {
-    width: 390px;
-    height: 390px;
+    width: 360px;
+    height: 360px;
   }
 
   .pain {
@@ -237,8 +237,8 @@
     gap: 80px;
   }
   .pain-item-content {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   .pain__list-item {
@@ -259,8 +259,8 @@
 
 @media screen and (max-width: 1255px) {
   .pain-item-content {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 
   .pain__container {
@@ -274,8 +274,8 @@
 
 @media screen and (max-width: 1150px) {
   .pain-item-content {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 
   .pain__list-item::before {
@@ -286,8 +286,8 @@
 
 @media screen and (max-width: 1080px) {
   .pain-item-content {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
   }
 
   .pain__title {
@@ -303,17 +303,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .pain-item-content {
-    width: 250px;
-    height: 250px;
-  }
-  .pain__container {
-    gap: 60px;
-  }
-}
-
-@media screen and (max-width: 915px) { 
+@media screen and (max-width: 1000px) { 
 
   .pain__container {
     flex-direction: column;
@@ -350,6 +340,13 @@
 @media screen and (max-width: 768px) {
   .pain {
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pain {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

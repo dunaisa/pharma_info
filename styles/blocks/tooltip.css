@@ -138,7 +138,7 @@
 }
 
 .chronic-tooltip {
-  top: 0%;
+  top: 4%;
   right: -50px;
 }
 
@@ -153,7 +153,7 @@
 
 .row__block-tooltip {
   top: 0;
-  right: 0;
+  right: 38%;
   transform: translate(50%, -50%);
 }
 
@@ -214,7 +214,7 @@
 
 .tooltip__list {
   padding: 0;
-  margin: 0 0 0 5%;
+  margin: 0 0 0 40px;
 }
 
 .tooltip__list li {
@@ -231,12 +231,24 @@
   padding-top: 0;
 }
 
+.chronic-tooltip_mob {
+  display: none;
+}
+
 
 @media screen and (max-width: 1919px) {
   .promo-tooltip {
     right: 44%;
     bottom: 48%;
   }
+  
+  /* .research__tooltip_02 {
+    transform: ;
+  }
+
+  .research__tooltip-content_02 {
+    transform: translate(-100%, -100%);
+  } */
 }
 
 @media screen and (max-width: 1440px) {
@@ -308,7 +320,7 @@
 @media screen and (max-width: 790px) {
   .promo-tooltip {
     top: 38%;
-    left: 5%;
+    left: 10%;
   }
 
   .risks-tooltip {
@@ -320,6 +332,12 @@
     transform: translate(-100%, -100%);
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .promo-tooltip {
+    left: 5%;
+  }
 }
 
 @media screen and (max-width: 708px) {
@@ -347,9 +365,32 @@
     width: 30px;
     height: 30px;
   }
+
+  .chronic-tooltip_desk {
+    display: none;
+  }
+
+  .chronic-tooltip_mob {
+    display: block;
+  }
+
   .chronic-tooltip {
     top: 5%;
+    right: 5%;
   }
+
+  .chronic-tooltip-content-mob {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .row__block-tooltip {
+    top: 0;
+    right: 62%;
+    transform: translate(50%, -50%);
+  }
+
 }
 
 @media screen and (max-width: 500px) {
